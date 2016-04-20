@@ -1,11 +1,5 @@
 # uncomment to use a custom database.yml configuration
-# include_recipe "database_yml_custom"
-
-#execute "testing" do
-#  command %Q{
-#    echo "i ran at #{Time.now}" >> /root/cheftime
-#  }
-#end
+include_recipe "database_yml_custom"
 
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
@@ -23,7 +17,7 @@
 # include_recipe "ban"
 
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
-# include_recipe "sidekiq"
+include_recipe "sidekiq"
 
 #uncomment to turn on memcached
 # include_recipe "memcached"
@@ -53,7 +47,7 @@
 
 #uncomment to install specified packages
 # You must add your packages to packages/attributes/packages.rb
-#require_recipe "packages"
+require_recipe "packages"
 
 #uncomment to add specified cron jobs for application user (deploy)
 # You must add your cron jobs to cron/attributes/cron.rb
@@ -67,13 +61,13 @@
 # include_recipe "resque"
 
 #uncomment to run redis.yml recipe
-# include_recipe "redis-yml"
+include_recipe "redis-yml"
 
 #uncomment to run the resque-scheduler recipe
 # include_recipe "resque-scheduler"
 
 #uncomment to run the redis recipe
-#include_recipe "redis"
+include_recipe "redis"
 
 #uncomment to run the env-yaml recipe
 #include_recipe "env-yaml"
@@ -81,7 +75,7 @@
 #uncomment to run the api-keys-yml recipe
 # include_recipe "api-keys-yml"
 
-#include_recipe "logrotate"
+include_recipe "logrotate"
 #
 #uncomment to use the solr recipe
 #include_recipe "solr"
