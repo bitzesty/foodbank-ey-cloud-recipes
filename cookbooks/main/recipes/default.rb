@@ -1,6 +1,8 @@
 # uncomment to use a custom database.yml configuration
 include_recipe "database_yml_custom"
 
+include_recipe "phantomjs"
+
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
 
@@ -47,7 +49,7 @@ include_recipe "sidekiq"
 
 #uncomment to install specified packages
 # You must add your packages to packages/attributes/packages.rb
-require_recipe "packages"
+# require_recipe "packages"
 
 #uncomment to add specified cron jobs for application user (deploy)
 # You must add your cron jobs to cron/attributes/cron.rb
