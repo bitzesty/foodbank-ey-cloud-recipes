@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 
-if ['app', 'app_master'].include?(node[:instance_role])
+if ['app', 'app_master', 'redis'].include?(node[:instance_role])
 
   bash "install_phantomjs" do
     not_if "phantomjs --version | grep -q '1.9.8'"
