@@ -11,7 +11,7 @@ default[:sidekiq] = {
   :utility_name => 'redis',
 
   # Number of workers (not threads)
-  :workers => 2,
+  :workers => 1,
 
   # Concurrency
   :concurrency => 25,
