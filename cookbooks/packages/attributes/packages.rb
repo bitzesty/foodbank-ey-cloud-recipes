@@ -6,4 +6,4 @@
 #
 # Examples below:
 
-default[:packages] = [{:name => "www-client/phantomjs", :version => "1.9.8"}]
+default[:packages] = [{:name => "media-fonts/corefonts"}]
