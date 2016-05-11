@@ -6,4 +6,4 @@
 #
 # Examples below:
 
-default[:packages] = [{:name => "media-fonts/corefonts"}]
+default[:packages] = [{:name => "media-fonts/corefonts"},{:name => "media-fonts/urw-fonts"}]
